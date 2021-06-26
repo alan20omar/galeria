@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galeria de imagenes</title>
+	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</head> 
+<body>
+	<h1>Galeria</h1>
+	<div class="galeria">
+		{% for y,x in imagenes.items %}	
+		<div class="contenedor">
+			<img src="{{x}}" alt="{{y}}">
+			<p>{{y}}</p>
+		</div>
+		{% endfor %}
+	</div>
+	<input type="file" id="myfile" accept="image/*">
+	<input type="submit" id="subir"></button>
+</body>
+</html>

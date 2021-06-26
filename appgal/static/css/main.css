@@ -1,0 +1,66 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: Yatra One;
+	background-image: url("backstar.jpg");
+}
+.galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-width: 220px;
+	background: rgba(171, 245, 228,0.8);
+	border-radius: 30px;
+	padding: 20px;
+	margin: 35px;
+}
+.contenedor{
+	width: 190px;
+	margin: 15px;
+}
+.contenedor > p{
+	font-size: 15px;
+	text-align: center;
+	color: black;
+	line-height: 15px;
+}
+.contenedor > img{
+	width: 190px;
+	height: 100px;
+	min-width: 190px;
+	min-height: 100px;
+	background: #C4C4C4;
+	border-radius: 10px;
+	opacity: 1;
+}
+h1{	
+	font-weight: normal;
+	font-size: 60px;
+	color: white;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+#myfile{
+	font-weight: normal;
+	color: white;
+	margin-left: 40px;
+	padding: 5px;
+}
+#subir{
+	font-weight: normal;
+	width: 120px;
+	height: 40px;
+	font-size: 30px;
+	border-width: 5px;
+	border-style: inset;
+	background: #9A8CF1;
+	border: solid 1px white;
+	border-radius: 10px;
+	padding: 5px;
+	cursor: pointer;
+	display: block;
+	margin-left: 40px;
+}
